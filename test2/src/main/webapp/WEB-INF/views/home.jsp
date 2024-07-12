@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -41,8 +40,7 @@
 				<c:forEach var="product" items="${products}">
 					<tr>
 						<td>${product.productNo}</td>
-						<td><a
-							href="${pageContext.request.contextPath}/products/detail?productNo=${product.productNo}">${product.productName}</a></td>
+						<td><a href="${pageContext.request.contextPath}/products/detail?productNo=${product.productNo}">${product.productName}</a></td> <!-- 상품이름에만 링크 -->
 						<td>${product.genre}</td>
 						<td>${product.releaseDate}</td>
 					</tr>
